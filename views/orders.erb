@@ -1,0 +1,26 @@
+<h2>Placed orders</h2>
+<br />
+<br />
+<table class="table table-striped">
+	<thead>
+    	<tr>
+          	<th>Items</th>
+          	<th>Buyer name</th>
+          	<th>Buyer phone number</th>
+          	<th>Delivery address</th>
+        </tr>
+    </thead>
+    <tbody>
+    	
+      	<% @placed_orders.each do |order| %>
+        	<tr>
+        		<td><%= order.orders_input%></td>
+          		<td><%= order.name %></td>
+          		<td><%= order.phone %></td>
+          		<td><%= order.address %></td>
+        	</tr>
+        
+      	<% end %>
+      
+    </tbody>
+</table>
